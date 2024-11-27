@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-entity environment="preset: starry; dressingAmount:400;
+     skyColor:light purple;"></a-entity>
+    <a-box id="floor" position="0  0  0" rotation="90  0  0" scale="10.5  10.5 .1" color="#002366"></a-box>
+    <a-box id="box1" position="0  1.473  4.907" rotation="0  0  0" scale="10  3  0.2" color="white"></a-box>
+    <a-box id="box2" position="0 1.473 -4.907" rotation="0  0  0" scale="10  3  0.2" color="white"></a-box>
+    <a-box id="box3" position="5.049  1.454  -0.00" rotation="0 -90 0" scale="10  3  0.2" color="white"></a-box>
+    <a-box id="box4" position="-5.049 1.454  -0.00" rotation="0 -90  0" scale="10  3  0.2" color="white"></a-box>
+    <a-cylinder id="triangle_front" segments-radial="3" position="0  3.874 4.907" rotation="-90  0  0"
+      scale="5.774  0.2  1.8" color="white"></a-cylinder>
+    <a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90  0  0"
+      scale="5.774  0.2  1.8" color="white"></a-cylinder>
+    <a-box id="roof_right" position="2.580  4.328  0" rotation="28.433  90  0" scale="10.931 0.20  6.110"
+      color="#002366"></a-box>
+    <a-box id="roof_left" position="-2.599  4.3321  -0.017" rotation="28.433  -90  0" scale="10.931 0.20  6.130"
+      color="#002366"></a-box> <!-- end of house -->
+
+    <!-- artwork start -->
+    <a-plane id="art1" src="images/beautiful_italy.jpg" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
+    <a-plane id="art2" src="images/greece_alley.jpg" scale="2 2 0.05" rotation="3.525 178.494 1.015" position="0.092 1.832 4.567"></a-plane>
+    <a-plane id="art3" src="images/greekChurch.jpg" scale="2 2 0.05" rotation="0.000 90 0.000" position="-4.897 1.452 -0.269"></a-plane>
+    <a-plane id="art4" src="images/italianChurch.jpg" scale="2 2 0.05" rotation="0.000 -90 0.000" position="4.939 1.452 -0.016"></a-plane>
+
+  </a-scene>
+
+</html>
